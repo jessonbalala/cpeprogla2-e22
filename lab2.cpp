@@ -19,31 +19,18 @@ double problem1()
 	
 }
 //c
+
 void problem2(){
-	
-	
-	
-	
-	int uniques[] = {0,0,0,0,0,0,0,0,0,0};
-	int num;
-	int min = 1;
-	int max = 20;
-	srand( (unsigned)time( NULL )); 
-	for(int i =0; i<10; i++){
-		num = min + (rand() % (max - min + 1));
-		for(int j=0; j<10; j++){
-			if(num == uniques[j]){
-				num = min + (rand() % (max - min + 1));
-			}
-			else{
-				uniques[i] = num;
-			}
-		}
+	//this program is used to generate 10 random number
+	int min=1 , max =20;
+		cout << "Random numbers Program" <<endl;
+		cout << "Your 10 random numbers are: ";
+	srand((unsigned)time( NULL ));
+	for (int i=0; i<10; i++)
+		cout << min +(rand()%(max - min + 1)) << " ";
+		cout << endl;
 	}
-	for(int i=0; i<10; i++){
-		cout << uniques[i]<<" ";
-	}
-	}
+
 
 
 
