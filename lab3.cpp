@@ -1,3 +1,5 @@
+//balala,jesson U
+
 #include<iostream>
 #include<cstring>
 
@@ -159,25 +161,29 @@ char str[30];
 
 int problem6(){
 	
+	int i;
+	char str[100];
+	cout<<"************************"<<endl
+		<<"Problem 6"<<endl
+		<<"************************"<<endl;
+	cout<<"Enter a string: ";
+	cin.getline(str, 100);
+   for(i=0; i<strlen(str); i++){
+   	if (isalpha(str[i])){
+   		cout<<str[i];
+	   }
+   	else if (isspace(str[i])){
+   		cout<<endl;
+   		 
+	   }
+	else if (isdigit(str[i])){
+		cout<<endl;
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	   else{
+	   	;
+	   }
+   }
 }
 
 main(){	
@@ -196,6 +202,9 @@ main(){
 	cout<<endl;
 	
 	problem5();
+	cout<<endl;
+	
+	problem6();
 	cout<<endl;
 	
 	
