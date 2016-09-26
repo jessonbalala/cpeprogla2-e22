@@ -52,7 +52,7 @@ void NewLine(){
 	char s;
 	do{cin.get(s);}while(s!='\n');
 }
-
+//problem 1
 void problem1(){
     Student stud;
     cout << "Enter Student Record: \n";
@@ -89,7 +89,7 @@ void problem1(){
     system("pause > 0");
 }
 
-
+//problem 2
 void problem2(){
 	int i, j; 
 	float grade;
@@ -139,8 +139,8 @@ void problem2(){
 		
 	
 	}
-	
-	
+
+//problem 3 with main program
 int main(){
 	int i, j, tPrice;
 	problem1();
