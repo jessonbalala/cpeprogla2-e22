@@ -1,19 +1,22 @@
 #include<iostream>
+#include<cmath>
+#include <fstream>
 using namespace std;
 
 int main(){
-    FILE *fp;
-    fp = fopen("sample.txt", "a");
-    
-    if(!fp){
-            cout << "Cannot open file";
-            system("pause");
-            exit(1);        
-    }
-    fputc('\n', fp);
-    for(int i=97; i<123; i++){
-            fputc(i, fp);        
-    }    
-    fclose(fp);
-    return 0;
-}   
+	
+	int  x ,sum=0;
+	ifstream f("input.txt");
+	int number;
+	
+	while (f>>number){
+		
+		for(x=0;x<number;x++)
+      		if(x%3==0 || x%5==0)
+         		sum=sum+x;
+  	cout<<sum;
+	     
+	}
+	system ("pause > 0");
+
+}
